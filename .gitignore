@@ -145,3 +145,11 @@ dmypy.json
 outputs/
 
 .idea/
+
+tracking_results*
+notebooks/videos/pi*
+checkpoints
+mask_coordinates.json
+moved_objects.json
+.jupyter_ystore.db
+significant_object_movements.json

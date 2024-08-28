@@ -18,7 +18,7 @@ from sam2.sam2_image_predictor import SAM2ImagePredictor
 Prompt Grounding DINO 1.5 with Text for Box Prompt Generation with Cloud API
 """
 # Step 1: initialize the config
-token = "Your API token"
+token = "acb5ee944d3ff954cb5d2c38d1f5cab8"
 config = Config(token)
 
 # Step 2: initialize the client
@@ -27,7 +27,7 @@ client = Client(config)
 # Step 3: run the task by DetectionTask class
 # image_url = "https://algosplt.oss-cn-shenzhen.aliyuncs.com/test_files/tasks/detection/iron_man.jpg"
 # if you are processing local image file, upload them to DDS server to get the image url
-img_path = "notebooks/images/cars.jpg"
+img_path = "/home/ubuntu/couno/image.png"
 image_url = client.upload_file(img_path)
 
 task = DetectionTask(
